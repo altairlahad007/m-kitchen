@@ -1,9 +1,16 @@
 import type { NextConfig } from "next";
 
+const isGithubPages = process.env.GITHUB_PAGES === "true";
+
 const nextConfig: NextConfig = {
   /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  ...(isGithubPages
+    ? {
+        output: "export" as const,
+        images: { unoptimized: true },
+        basePath: process.env.NEXT_PUBLIC_BASE_PATH || "/m-kitchen",
+      }
+    : {}),
   turbopack: {
     rules: {
       "*.css": {

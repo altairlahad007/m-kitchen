@@ -1,9 +1,7 @@
 import Image from "next/image";
 import logoPng from "@assets/images/logo.png";
 
-export async function Footer() {
-  "use cache";
-
+export function Footer() {
   return (
     <footer className="border-t border-border bg-background py-10">
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-4 px-4 text-center md:flex-row md:justify-between md:text-left">

@@ -9,8 +9,9 @@ import { Burger } from "./Burger";
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const FRAME_COUNT = 80;
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const frameUrl = (i: number) =>
-  `/videos/frames/frame_${String(i + 1).padStart(4, "0")}.jpg`;
+  `${BASE_PATH}/videos/frames/frame_${String(i + 1).padStart(4, "0")}.jpg`;
 
 export function NutritionFacts() {
   const sectionRef = useRef<HTMLElement>(null);
