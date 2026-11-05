@@ -1,0 +1,44 @@
+/* Typography scale — semantic text classes used across the app. */
+
+@layer components {
+  .heading-1 {
+    font-family: var(--font-chewy);
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+  }
+
+  .heading-2 {
+    font-family: var(--font-chewy);
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 400;
+  }
+
+  .heading-3 {
+    font-family: var(--font-chewy);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+  }
+
+  .subtitle {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    color: var(--muted-foreground);
+  }
+
+  .body-text {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+  }
+
+  .caption {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 400;
+    color: var(--muted-foreground);
+  }
+}

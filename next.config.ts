@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
         loaders: ["@tailwindcss/turbopack"],
         as: "*.css",
       },
+      "**/*.mp4": {
+        type: "asset",
+      },
     },
   },
 };
