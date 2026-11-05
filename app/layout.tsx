@@ -16,8 +16,38 @@ const atma = Atma({
 });
 
 export const metadata: Metadata = {
-  title: "mkitchen",
-  description: "Next.js + TailwindCSS project",
+  metadataBase: new URL("https://altairlahad007.github.io/m-kitchen/"),
+  title: {
+    default: "M Kitchen — Fresh, healthy meals delivered",
+    template: "%s | M Kitchen",
+  },
+  description:
+    "Fresh, healthy meals prepared daily and delivered to your door in weekly and monthly packages. Balanced protein and carbs in every meal — M Kitchen.",
+  keywords: [
+    "M Kitchen",
+    "meal prep",
+    "healthy meals",
+    "meal delivery",
+    "weekly meal package",
+    "monthly meal plan",
+    "meal subscription Oman",
+  ],
+  openGraph: {
+    title: "M Kitchen — Fresh, healthy meals delivered",
+    description:
+      "Fresh, balanced meals delivered weekly or monthly. Build your meal package in three easy steps.",
+    url: "https://altairlahad007.github.io/m-kitchen/",
+    siteName: "M Kitchen",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "M Kitchen — Fresh, healthy meals delivered",
+    description:
+      "Fresh, balanced meals delivered weekly or monthly. Build your meal package in three easy steps.",
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
